@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register">
+    <meta name="keywords" content="real estate">
+    <meta name="author" content="real estate">
+    <!-- <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon" /> -->
+    <title>Register</title>
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+
+    <!-- Template css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/admin.css">
+
+</head>
+
+<body>
+
+    <!-- Loader start -->
+    <div class="loader-wrapper">
+        <div class="row loader-img">
+            <div class="col-12">
+                <img src="./assets/images/loader/loader-2.gif" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Loader end -->
+
+    <div class="page-wrapper">
+
+        <!-- page header start -->
+        <div class="page-main-header row">
+            <div id="sidebar-toggle" class="toggle-sidebar col-auto">
+                <i data-feather="chevrons-left"></i>
+            </div>
+
+            <div class="nav-right col p-0">
+                <ul class="header-menu">
+                    <li>
+                        <!-- <div class="d-md-none mobile-search">
+                            <i data-feather="search"></i>
+                        </div> -->
+                        <div class="form-group search-form">
+                            <input type="text" class="form-control" placeholder="Search here...">
+                        </div>
+                    </li>
+                    <li class="profile-avatar onhover-dropdown">
+                        <div>
+                            <img src="./assets/images/avatar/avatar1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <ul class="profile-dropdown onhover-show-div">
+                            <li><a href="#"><span>Account </span><i data-feather="user"></i></a></li>
+                            <!-- <li><a href="#"><span>Listing</span><i data-feather="file-text"></i></a></li> -->
+                            <li><a href="#"><span>Log in</span><i data-feather="log-in"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- page header end -->
+        <div class="page-body-wrapper">
+
+            <!-- page sidebar start -->
+            <div class="page-sidebar">
+                <div class="logo-wrap">
+                    <a href="index.html">
+                        <img src="./assets/images/logo/logo1.png" class="img-fluid for-light" alt="" style="width:140px;height:90
+                        px;">
+                        <img src="./assets/images/logo/logo2.png" class="img-fluid for-dark" alt="" style="width:140px;height:90
+                        px;">
+                    </a>
+                    <div class="back-btn d-lg-none d-inline-block">
+                        <i data-feather="chevrons-left"></i>
+                    </div>
+                </div>
+                <div class="main-sidebar">
+                    <div class="user-profile">
+                        <div class="media">
+                            <div class="change-pic">
+                                <img src="./assets/images/avatar/avatar1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="media-body">
+                                <a href="#">
+                                    <h6>Not Signed In</h6>
+                                </a>
+                                <!-- <span class="font-roboto">saphonkunzi@gmail.com</span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mainsidebar">
+                        <ul class="sidebar-menu custom-scrollbar">
+                            <!-- <li class="sidebar-item">
+                                <a href="#" class="sidebar-link only-link">
+                                    <i data-feather="airplay"></i> 
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="javascript:void(0)" class="sidebar-link">
+                                    <i data-feather="grid"></i> 
+                                    <span>My properties</span>
+                                </a>
+                                <ul class="nav-submenu menu-content">
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            add property
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            edit property
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            property list
+                                        </a>
+                                    </li> -->
+                                    <!-- <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Favourites
+                                        </a>
+                                    </li> -->
+
+                                <!-- </ul>
+                            </li> -->
+                            <!-- <li class="sidebar-item">
+                                <a href="javascript:void(0)" class="sidebar-link">
+                                    <i data-feather="users"></i>
+                                    <span>Manage users</span>
+                                </a>
+                                <ul class="nav-submenu menu-content">
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Add tenants
+                                        </a>
+                                    </li> -->
+                                    <!-- <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Add user wizard <span class="label label-shadow ms-1">new</span>
+                                        </a>
+                                    </li> -->
+                                    <!-- <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Edit tenants
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            All tenants
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- <li class="sidebar-item">
+                                <a href="javascript:void(0)" class="sidebar-link">
+                                    <i data-feather="user-plus"></i>
+                                    <span>Agents</span>
+                                </a>
+                                <ul class="nav-submenu menu-content">
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Add agent
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Add agent wizard <span class="label label-shadow ms-1">new</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Edit agent
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            All agents
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Invoice
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- <li class="sidebar-item">
+                                <a href="#" class="sidebar-link only-link">
+                                    <i data-feather="map-pin"></i>
+                                    <span>Map</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="javascript:void(0)" class="sidebar-link">
+                                    <i data-feather="layout"></i>
+                                    <span>Types</span>
+                                </a>
+                                <ul class="nav-submenu menu-content"> -->
+                                    <!-- <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Family House
+                                        </a>
+                                    </li> -->
+                                    <!-- <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Apartment
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Shared Rooms
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <!-- <li class="sidebar-item">
+                                <a href="#" class="sidebar-link only-link">
+                                    <i data-feather="bar-chart-2"></i>
+                                    <span>Reports</span>
+                                </a>
+                            </li> -->
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link only-link">
+                                    <i data-feather="phone"></i>
+                                    <span>Contact Us</span>
+                                </a>
+                            </li>
+                            <!-- <li class="sidebar-item">
+                                <a href="javascript:void(0)" class="sidebar-link">
+                                    <i data-feather="unlock"></i>
+                                    <span>Authentication</span>
+                                </a>
+                                <ul class="nav-submenu menu-content">
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            Log in
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            sign up
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i data-feather="chevrons-right"></i>
+                                            404
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- <li>
+                                <div class="upgrade-box">
+                                    <img src="../assets/images/svg/1.svg" class="img-fluid" alt="">
+                                    <h6>Need Help</h6>
+                                    <a href="https://pixelstrap.freshdesk.com/support/home" target="_blank" class="p-0 m-0">
+                                        <span class="d-block">Raise ticket at "support@pixelstrap.com"</a>
+                                    </a>
+                                    <button type="button" onclick=" window.open('https://themeforest.net/user/pixelstrap/portfolio', '_blank');" class="btn btn-pill btn-gradient color-4 btn-sm mt-2 fw-bold">Buy Now</button>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- page sidebar end -->
+
+            <div class="page-body">
+
+                <!-- Container-fluid start -->
+                <div class="container-fluid">
+                    <div class="page-header">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="page-header-left">
+                                    <h3>Student Register
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+
+                                <!-- Breadcrumb start -->
+                                <ol class="breadcrumb pull-right">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">
+                                            <i class="fa fa-home"></i>
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Register</li>
+                                </ol>
+                                <!-- Breadcrumb end -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container-fluid end -->
+
+                <!-- Container-fluid start -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header pb-0">
+                                    <h5>Enter Your Details</h5>
+                                </div>
+                                <div class="card-body admin-form">
+                                    <form class="row gx-3">
+                                        <div class="form-group col-sm-4">
+                                            <label>Full Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter your full name" required="">
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label>Age</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Select your age</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">18</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">19</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">20</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">21</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">22</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">23</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">24</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">25</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">26</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">27</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">28</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">29</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">30</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">31</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">32</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">33</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">34</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">35</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">40</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">41</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">42</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">43</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">44</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">45</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">46</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">47</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">48</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">49</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">50</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">51</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">52</a>
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="form-group col-sm-4">
+                                            <label>Gender</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Select your gender</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">Male</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Female</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label>Race</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Select your race</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">Black</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Indian</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">White</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Coloured</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label>Institution</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Select your institution</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">University Of Cape Town</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">University Of Johannesburg</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">False Bay College</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Northlink College</a>
+                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label>Campus</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Select your campus</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">Cape Town</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Durban</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label>Bursary</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Select your bursary</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">NSFAS</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Self-funded</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Other</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label>If other, please specify</label>
+                                            <input type="text" class="form-control" placeholder="Describe your funding">
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label>Learning Year</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Select your race</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">Under-Grad</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Post-grad</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Masters</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Honours</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group col-sm-12 mb-2">
+                                            <label>Do you have disability ?</label>
+                                            <div class="additional-checkbox">
+                                                <label for="chk-ani">
+                                                    <input class="checkbox_animated color-4" id="chk-ani" type="checkbox"> Yes
+                                                </label>
+                                                <label for="chk-ani1">
+                                                    <input class="checkbox_animated color-4" id="chk-ani1" type="checkbox"> No
+                                                </label>
+                                            </div>
+                                            </div>
+                                        <div class="form-group col-sm-4">
+                                            <label>If yes, please specify</label>
+                                            <input type="text" class="form-control" placeholder="Describe your disability">
+                                        </div>
+                                        <!-- <div class="form-group col-sm-4">
+                                            <label>Price</label>
+                                            <input type="text" class="form-control" placeholder="R3000">
+                                        </div> -->
+                                        <!-- <div class="form-group col-sm-4">
+                                            <label>Agencies</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Premiere</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">Blue Sky</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Zephyr</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Premiere</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="form-group col-sm-12">
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="4"></textarea>
+                                        </div> -->
+                                        <!-- <div class="form-group col-sm-6">
+                                            <label>Address</label>
+                                            <input type="text" class="form-control" placeholder="Address of your property">
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label>Zip code</label>
+                                            <input type="text" class="form-control" placeholder="39702">
+                                        </div> -->
+                                        <!-- <div class="form-group col-sm-4">
+                                            <label>Any Country</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>South Africa</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">South Africa</a> -->
+                                                    <!-- <a class="dropdown-item" href="javascript:void(0)">Brazil</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">New york</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">USA</a> -->
+                                                <!-- </div>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="form-group col-sm-4">
+                                            <label>Any City</label>
+                                            <div class="dropdown">
+                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Cape town</span> <i class="fas fa-angle-down"></i></span>
+                                                <div class="dropdown-menu text-start">
+                                                    <a class="dropdown-item" href="javascript:void(0)">Cape Town</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Johannesburg</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Durban</a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">Polokwane</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="form-group col-sm-4">
+                                            <label>Landmark</label>
+                                            <input type="text" class="form-control" placeholder="landmark place name">
+                                        </div> -->
+                                    </form>
+                                    <div class="dropzone-admin">
+                                        <label>Necessary Documents</label>
+                                        <form class="dropzone" id="multiFileUpload" action="/upload.php">
+                                            <div class="dz-message needsclick"><i class="fas fa-cloud-upload-alt"></i>
+                                                <h6>Drop files here or click to upload your documents.</h6>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- <form class="row gx-3">
+                                        <div class="form-group col-sm-12">
+                                            <label>video (mp4)</label>
+                                            <input type="text" class="form-control" placeholder="mp4 video link">
+                                        </div>
+                                        <div class="form-group col-sm-12 mb-0">
+                                            <label>Additional features</label>
+                                            <div class="additional-checkbox">
+                                                <label for="chk-ani">
+                                                    <input class="checkbox_animated color-4" id="chk-ani" type="checkbox"> Emergency Exit
+                                                </label>
+                                                <label for="chk-ani1">
+                                                    <input class="checkbox_animated color-4" id="chk-ani1" type="checkbox"> CCTV
+                                                </label>
+                                                <label for="chk-ani2">
+                                                    <input class="checkbox_animated color-4" id="chk-ani2" type="checkbox" checked> Free Wi-Fi
+                                                </label>
+                                                <label for="chk-ani3">
+                                                    <input class="checkbox_animated color-4" id="chk-ani3" type="checkbox">  Free Parking In The Area
+                                                </label>
+                                                <label for="chk-ani4">
+                                                    <input class="checkbox_animated color-4" id="chk-ani4" type="checkbox">  Air Conditioning
+                                                </label>
+                                                <label for="chk-ani5">
+                                                    <input class="checkbox_animated color-4" id="chk-ani5" type="checkbox">  Security Guard
+                                                </label>
+                                                <label for="chk-ani6">
+                                                    <input class="checkbox_animated color-4" id="chk-ani6" type="checkbox" checked>  Terrace
+                                                </label>
+                                                <label for="chk-ani7">
+                                                    <input class="checkbox_animated color-4" id="chk-ani7" type="checkbox">  Laundry Service
+                                                </label>
+                                                <label for="chk-ani8">
+                                                    <input class="checkbox_animated color-4" id="chk-ani8" type="checkbox">  Elevator Lift
+                                                </label>
+                                                <label for="chk-ani9">
+                                                    <input class="checkbox_animated color-4" id="chk-ani9" type="checkbox" checked>  Balcony
+                                                </label>
+                                            </div>
+                                        </div> -->
+                                        <div class="form-btn col-sm-12">
+                                            <button type="button" class="btn btn-pill btn-gradient color-4">Create Account</button>
+                                            <!-- <button type="button" class="btn btn-pill btn-dashed color-4">Cancel</button> -->
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container-fluid end -->
+
+            </div>
+
+            <!-- footer start -->
+            <!-- <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 footer-copyright">
+                            <p class="mb-0">Copyright 2022 © Sheltos All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="float-end mb-0">Developed with <i class="fa fa-heart font-danger"></i></p>
+                        </div>
+                    </div>
+                </div> -->
+            </footer>
+            <!-- footer end -->
+        </div>
+    </div>
+
+    <!-- tap to top start -->
+    <div class="tap-top">
+        <div>
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+    <!-- tap to top end -->
+
+    <!-- customizer start -->
+    <div class="customizer-wrap">
+        <div class="customizer-links">
+            <i data-feather="settings"></i>
+        </div>
+        <div class="customizer-contain custom-scrollbar">
+            <div class="setting-back">
+                <i data-feather="x"></i>
+            </div>
+            <div class="layouts-settings">
+                <div class="customizer-title">
+                    <h6 class="color-4">Layout type</h6>
+                </div>
+                <div class="option-setting">
+                    <span>Light</span>
+                    <label class="switch">
+                        <input type="checkbox" name="chk1" value="option" class="setting-check"><span class="switch-state"></span>
+                    </label>
+                    <span>Dark</span>
+                </div>
+            </div>
+            <div class="layouts-settings">
+                <div class="customizer-title">
+                    <h6 class="color-4">Layout Direction</h6>
+                </div>
+                <div class="option-setting">
+                    <span>LTR</span>
+                    <label class="switch">
+                        <input type="checkbox" name="chk2" value="option" class="setting-check1"><span class="switch-state"></span>
+                    </label>
+                    <span>RTL</span>
+                </div>
+            </div>
+            <div class="layouts-settings">
+                <div class="customizer-title">
+                    <h6 class="color-4">Unlimited Color</h6>
+                </div>
+                <div class="option-setting unlimited-color-layout">
+                    <div class="form-group">
+                        <label for="ColorPicker6">color 6</label>
+                        <input id="ColorPicker6" type="color" value="#f35d43" name="Default">
+                    </div>
+                    <div class="form-group">
+                        <label for="ColorPicker7">color 7</label>
+                        <input id="ColorPicker7" type="color" value="#f34451" name="Default">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- customizer end -->
+
+    <!-- latest jquery-->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- feather icon js-->
+    <script src="./assets/js/feather-icon/feather.min.js"></script>
+    <script src="./assets/js/feather-icon/feather-icon.js"></script>
+
+    <!-- Dropzone js -->
+    <script src="./assets/js/dropzone/dropzone.js"></script>
+    <script src="./assets/js/dropzone/dropzone-script.js"></script>
+
+    <!-- Color-picker js-->
+    <script src="./assets/js/color/custom-colorpicker.js"></script>
+
+    <!-- sidebar js -->
+    <script src="./assets/js/sidebar.js"></script>
+
+    <!--admin js -->
+    <script src="./assets/js/admin-script.js"></script>
+
+    <!-- Customizer js-->
+    <script src="./assets/js/customizer.js"></script>
+
+</body>
+</html>

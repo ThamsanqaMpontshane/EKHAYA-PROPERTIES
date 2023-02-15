@@ -8,15 +8,15 @@ function addMarkerToGroup(group, coordinate, html) {
 }
 
 
-var yourMarker = '../assets/images/marker-icon2.png';
+var yourMarker = 'https://www.flaticon.com/free-icons/location';
 var icon = new H.map.Icon(yourMarker);
 
 
 var markersData = {
     'House': [{
             name: 'Sea Breezes',
-            location_latitude: 25.206426,
-            location_longitude: 55.346465,
+            location_latitude: -29.8674,
+            location_longitude: 30.9807,
             map_image_url: '../assets/images/property/15.jpg',
             name_point: 'Sea Breezes',
             price: '$1200',
@@ -120,8 +120,8 @@ var defaultLayers = platform.createDefaultLayers();
 var map = new H.Map(document.getElementById('map'),
     defaultLayers.vector.normal.map, {
         center: {
-            lat: 25.206426,
-            lng: 55.319011
+            lat: -29.8674,
+            lng: 30.9807
         },
         zoom: 14,
         pixelRatio: window.devicePixelRatio || 1

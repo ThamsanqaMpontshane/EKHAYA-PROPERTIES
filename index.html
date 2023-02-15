@@ -5,22 +5,32 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sheltos - Add property page">
-    <meta name="keywords" content="sheltos">
-    <meta name="author" content="sheltos">
-    <!-- <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon" /> -->
-    <title>Add property page</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="real estate">
+    <meta name="author" content="real estate">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
+    <title>Home page</title>
 
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
 
+    <!-- magnific css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/magnific-popup.css">
+
+    <!-- range slider css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/jquery-ui.css">
+
+    <!--  map css  -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/here-maps-ui.css" />
+
     <!-- animate css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
 
     <!-- Template css -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/color1.css">
 
 </head>
 
@@ -36,738 +46,1506 @@
     </div>
     <!-- Loader end -->
 
-    <div class="page-wrapper">
-
-        <!-- page header start -->
-        <div class="page-main-header row">
-            <div id="sidebar-toggle" class="toggle-sidebar col-auto">
-                <i data-feather="chevrons-left"></i>
-            </div>
-
-            <div class="nav-right col p-0">
-                <ul class="header-menu">
-                    <li>
-                        <div class="d-md-none mobile-search">
-                            <i data-feather="search"></i>
+    <!-- header start -->
+    <header class="header-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="menu">
+                        <div class="brand-logo">
+                            <a href="index.html">
+                                <img src="./assets/images/logo/logo1.png" alt="" class="img-fluid for-light" style="height:125px;width:125px">
+                                <img src="./assets/images/logo/9.png" alt="" class="img-fluid for-dark" style="height:125px;width:125px">
+                            </a>
                         </div>
-                        <div class="form-group search-form">
-                            <input type="text" class="form-control" placeholder="Search here...">
-                        </div>
-                    </li>
-                    <!-- <li>
-                        <a href="#!" onclick="javascript:toggleFullScreen()">
-                            <i data-feather="maximize"></i>
-                        </a>
-                    </li> -->
-                    <!-- <li class="onhover-dropdown">
-                        <a href="javascript:void(0)">
-                            <i data-feather="save"></i>
-                        </a>
-                        <div class="notification-dropdown onhover-show-div">
-                            <div class="dropdown-title">
-                                <h6>Recent Attachments</h6>
-                                <a href="#">Show all</a>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="media">
-                                        <div class="icon-notification bg-success-light">
-                                            <i class="fas fa-file-word"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <a href="#">
-                                                <h6>Doc_file.doc</h6>
-                                            </a>
-                                            <span>800MB</span>
-                                        </div>
+                        <nav>
+                            <div class="main-navbar">
+                                <div id="mainnav">
+                                    <div class="toggle-nav">
+                                        <i class="fa fa-bars sidebar-bar"></i>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <div class="icon-notification bg-primary-light">
-                                            <i class="fas fa-file-image"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <a href="#">
-                                                <h6>Apartment.jpg</h6>
-                                            </a>
-                                            <span>500kb</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <div class="icon-notification bg-warning-light">
-                                            <i class="fas fa-file-pdf"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <a href="#">
-                                                <h6>villa_report.pdf</h6>
-                                            </a>
-                                            <span>26MB</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li> -->
-                    <li class="onhover-dropdown notification-box">
-                        <a href="javascript:void(0)">
-                            <i data-feather="bell"></i>
-                            <span class="label label-shadow label-pill notification-badge">3</span>
-                        </a>
-                        <div class="notification-dropdown onhover-show-div">
-                            <div class="dropdown-title">
-                                <h6>Notifications</h6>
-                                <a href="#">Show all</a>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="media">
-                                        <div class="icon-notification bg-primary-light">
-                                            <i class="fab fa-xbox"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <h6>Item damaged</h6>
-                                            <span>8 hours ago, Tadawis 24</span>
-                                            <p class="mb-0">"the table is broken:("</p>
-                                            <ul class="user-group">
-                                                <li>
-                                                    <a href="javascript:void(0)">
-                                                        <img src="./assets/images/about/4.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </li>
-                                                <li class="reply">
-                                                    <a href="javascript:void(0)">
-                                                        Reply
-                                                    </a>
-                                                </li>
+                                    <ul class="nav-menu">
+                                        <li class="back-btn">
+                                            <div class="mobile-back text-end">
+                                                <span>Back</span>
+                                                <i aria-hidden="true" class="fa fa-angle-right ps-2"></i>
+                                            </div>
+                                        </li>                                              
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0)" class="nav-link menu-title">about us</a>
+                                            
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:void(0)" class="nav-link menu-title">Contact</a>
+                                            <ul class="nav-submenu menu-content">
+                                                <li><a href="commingsoon.html">Contact us</a></li>                                          
                                             </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <div class="icon-notification bg-success-light">
-                                            <i class="fas fa-file-invoice-dollar"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <h6>Payment received</h6>
-                                            <span>2 hours ago, Bracka 15</span>
-                                            <ul class="user-group">
-                                                <li>
-                                                    <a href="javascript:void(0)">
-                                                        <img src="./assets/images/about/1.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">
-                                                        <img src="./assets/images/about/2.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">
-                                                        <img src="./assets/images/about/3.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- <li>
-                                    <div class="media">
-                                        <div class="icon-notification bg-warning-light">
-                                            <i class="fas fa-comment-dots"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <h6>New inquiry</h6>
-                                            <span>1 Days ago, Krowada 7</span>
-                                            <p class="mb-0">"is the villa still available?"</p>
-                                            <ul class="user-group">
-                                                <li>
-                                                    <a href="javascript:void(0)">
-                                                        <img src="../assets/images/about/2.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">
-                                                        <img src="../assets/images/about/3.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </li>
-                                                <li class="reply">
-                                                    <a href="javascript:void(0)">
-                                                        Reply
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li> -->
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="onhover-dropdown">
-                        <a href="javascript:void(0)">
-                            <i data-feather="mail"></i>
-                        </a>
-                        <div class="notification-dropdown chat-dropdown onhover-show-div">
-                            <div class="dropdown-title">
-                                <h6>Messages</h6>
-                                <a href="#">View all</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <ul>
-                                <li>
-                                    <div class="media">
-                                        <div class="chat-user">
-                                            <img src="./assets/images/avatar/spho.jpeg" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <a href="#">
-                                                <h6>Thamsanqa Mpontshane</h6>
-                                            </a>
-                                            <!-- <span>Template Represents simply...</span> -->
-                                        </div>
-                                        <div class="status online">online</div>
-                                    </div>
-                                </li>
-                                <!-- <li>
-                                    <div class="media">
-                                        <div class="chat-user">
-                                            <img src="../assets/images/avatar/3.jpg" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <a href="#">
-                                                <h6>Greta Life</h6>
-                                            </a>
-                                            <span>Template Represents simply...</span>
-                                        </div>
-                                        <div class="status away">Away</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="media">
-                                        <div class="chat-user">
-                                            <img src="../assets/images/avatar/4.jpg" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <a href="#">
-                                                <h6>Greta Life</h6>
-                                            </a>
-                                            <span>Template Represents simply...</span>
-                                        </div>
-                                        <div class="status online">online</div>
-                                    </div>
-                                </li> -->
-                                <!-- <li>
-                                    <div class="media">
-                                        <div class="chat-user">
-                                            <img src="../assets/images/avatar/7.jpg" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <a href="#">
-                                                <h6>Greta Life</h6>
-                                            </a>
-                                            <span>Template Represents simply...</span>
-                                        </div>
-                                        <div class="status busy">Busy</div>
-                                    </div>
-                                </li> -->
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="profile-avatar onhover-dropdown">
-                        <div>
-                            <img src="./assets/images/avatar/spho.jpeg" class="img-fluid" alt="">
-                        </div>
-                        <ul class="profile-dropdown onhover-show-div">
-                            <li><a href="#"><span>Account </span><i data-feather="user"></i></a></li>
-                            <li><a href="#"><span>Listing</span><i data-feather="file-text"></i></a></li>
-                            <li><a href="#"><span>Log in</span><i data-feather="log-in"></i></a></li>
+                        </nav>
+                        <ul class="header-right">
+                            <li>
+                                <a href="#"><i data-feather="home"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#login-modal"><i
+                                        data-feather="user"></i></a>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
+    </header>
+    <!--  header end -->
 
-        <!-- page header end -->
-        <div class="page-body-wrapper">
-
-            <!-- page sidebar start -->
-            <div class="page-sidebar">
-                <div class="logo-wrap">
-                    <a href="index.html">
-                        <img src="./assets/images/logo/logo1.png" class="img-fluid for-light" alt="" style="width:140px;height:90
-                        px;">
-                        <img src="./assets/images/logo/logo2.png" class="img-fluid for-dark" alt="" style="width:140px;height:90
-                        px;">
-                    </a>
-                    <div class="back-btn d-lg-none d-inline-block">
-                        <i data-feather="chevrons-left"></i>
-                    </div>
-                </div>
-                <div class="main-sidebar">
-                    <div class="user-profile">
-                        <div class="media">
-                            <div class="change-pic">
-                                <img src="./assets/images/avatar/spho.jpeg" class="img-fluid" alt="">
-                            </div>
-                            <div class="media-body">
-                                <a href="#">
-                                    <h6>Sapho Nkunzi</h6>
-                                </a>
-                                <span class="font-roboto">saphonkunzi@gmail.com</span>
+    <!-- home section start -->
+    <section class="layout-map vertical-map">
+        <div class="map" id="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 search-withmap">
+                    <div class="vertical-search">
+                        <div class="left-sidebar">
+                            <div class="row gx-2">
+                                <div class="col-lg-12">
+                                    <label>Property Status</label>
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>For Rent</span> <i class="fas fa-angle-down"></i></span>
+                                        <div class="dropdown-menu text-start">
+                                            <a class="dropdown-item" href="javascript:void(0)">For Rent</a>                                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <label>Property Type</label>
+                                
+                                    <input type="text" class="form-control" placeholder="apartment,shared rooms" required="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Max Rooms</label>
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>2</span> <i class="fas fa-angle-down"></i></span>
+                                        <div class="dropdown-menu text-start">
+                                            <a class="dropdown-item" href="javascript:void(0)">1</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">2</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">3</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">4</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">5</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">6</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label>Bed</label>
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>3</span> <i class="fas fa-angle-down"></i></span>
+                                        <div class="dropdown-menu text-start">
+                                            <a class="dropdown-item" href="javascript:void(0)">1</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">2</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">3</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">4</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label>Bath</label>
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>1</span> <i class="fas fa-angle-down"></i></span>
+                                        <div class="dropdown-menu text-start">
+                                            <a class="dropdown-item" href="javascript:void(0)">1</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">2</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">3</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">4</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="price-range">
+                                        <label for="amount">Price : </label>
+                                        <input type="text" id="amount" readonly="">
+                                        <div id="slider-range" class="theme-range-4 ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                            <div class="ui-slider-range ui-corner-all ui-widget-header"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="price-range">
+                                        <label for="amount">Area : </label>
+                                        <input type="text" id="amount1" readonly="">
+                                        <div id="slider-range1" class="theme-range-4 ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                            <div class="ui-slider-range ui-corner-all ui-widget-header"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="button" onclick="document.location='#'" class="btn btn-gradient color-4 mt-2">Search</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="mainsidebar">
-                        <ul class="sidebar-menu custom-scrollbar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link only-link">
-                                    <i data-feather="airplay"></i> 
-                                    <span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="javascript:void(0)" class="sidebar-link">
-                                    <i data-feather="grid"></i> 
-                                    <span>My properties</span>
-                                </a>
-                                <ul class="nav-submenu menu-content">
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            add property
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            edit property
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            property list
-                                        </a>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Favourites
-                                        </a>
-                                    </li> -->
-
-                                </ul>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="javascript:void(0)" class="sidebar-link">
-                                    <i data-feather="users"></i>
-                                    <span>Manage users</span>
-                                </a>
-                                <ul class="nav-submenu menu-content">
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Profile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Add tenants
-                                        </a>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Add user wizard <span class="label label-shadow ms-1">new</span>
-                                        </a>
-                                    </li> -->
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Edit tenants
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            All tenants
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- <li class="sidebar-item">
-                                <a href="javascript:void(0)" class="sidebar-link">
-                                    <i data-feather="user-plus"></i>
-                                    <span>Agents</span>
-                                </a>
-                                <ul class="nav-submenu menu-content">
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Profile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Add agent
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Add agent wizard <span class="label label-shadow ms-1">new</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Edit agent
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            All agents
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Invoice
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li> -->
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link only-link">
-                                    <i data-feather="map-pin"></i>
-                                    <span>Map</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="javascript:void(0)" class="sidebar-link">
-                                    <i data-feather="layout"></i>
-                                    <span>Types</span>
-                                </a>
-                                <ul class="nav-submenu menu-content">
-                                    <!-- <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Family House
-                                        </a>
-                                    </li> -->
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Apartment
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Shared Rooms
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- <li class="sidebar-item">
-                                <a href="#" class="sidebar-link only-link">
-                                    <i data-feather="bar-chart-2"></i>
-                                    <span>Reports</span>
-                                </a>
-                            </li> -->
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link only-link">
-                                    <i data-feather="credit-card"></i>
-                                    <span>Payments</span>
-                                </a>
-                            </li>
-                            <!-- <li class="sidebar-item">
-                                <a href="javascript:void(0)" class="sidebar-link">
-                                    <i data-feather="unlock"></i>
-                                    <span>Authentication</span>
-                                </a>
-                                <ul class="nav-submenu menu-content">
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            Log in
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            sign up
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i data-feather="chevrons-right"></i>
-                                            404
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li> -->
-                            <!-- <li>
-                                <div class="upgrade-box">
-                                    <img src="../assets/images/svg/1.svg" class="img-fluid" alt="">
-                                    <h6>Need Help</h6>
-                                    <a href="https://pixelstrap.freshdesk.com/support/home" target="_blank" class="p-0 m-0">
-                                        <span class="d-block">Raise ticket at "support@pixelstrap.com"</a>
-                                    </a>
-                                    <button type="button" onclick=" window.open('https://themeforest.net/user/pixelstrap/portfolio', '_blank');" class="btn btn-pill btn-gradient color-4 btn-sm mt-2 fw-bold">Buy Now</button>
-                                </div>
-                            </li> -->
-                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- page sidebar end -->
+        </div>
+    </section>
+    <!-- home section end -->
 
-            <div class="page-body">
+    <!-- property section start -->
+    
 
-                <!-- Container-fluid start -->
-                <div class="container-fluid">
-                    <div class="page-header">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="page-header-left">
-                                    <h3>Add property
-                                        <small>Welcome to Landlord Panel</small>
-                                    </h3>
+    <!-- feature section start -->
+    <section class="feature-section ratio_landscape bg-half zoom-gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="feature-4 modern-feature arrow-gradient">
+                        <div>
+                            <div class="feature-wrap">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="feature-image">
+                                            <a href="./assets/images/feature/9.jpg" class="zoom">
+                                                <div class="feature-overlay">
+                                                    <span>+</span>
+                                                </div>
+                                                <img src="./assets/images/feature/9.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <span class="label label-gradient label-lg color-4">
+                                                Featured property
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="feature-content">
+                                            <div class="details">
+                                                <h3><a href="#">Home to rent in Durban </a></h3>
+                                                <span>Umlazi Way, Durban</span>
+                                                <p class="font-roboto">Residences can be classified by and how they are connected to neighbouring residences and land. </p>
+                                            </div>
+                                            <ul class="detail-list">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <span class="label label-light color-2 label-lg">
+                                                            <img src="./assets/images/icon/bed.png" class="img-fluid img-icon" alt="">
+                                                        </span>
+                                                        <h6>Bedroom</h6>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <span class="label label-light color-2 label-lg">
+                                                            <img src="./assets/images/icon/bathroom.png" class="img-fluid img-icon" alt="">
+                                                        </span>
+                                                        <h6>Bathroom</h6>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="label label-light color-2 label-lg">9532 Sq Ft</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="feature-price">
+                                                <li>
+                                                    <h3>R2250</h3>
+                                                    <h6>Home For Rent</h6>
+                                                </li>
+                                                <li><button type="button" onclick="document.location='#'" class="btn btn-gradient color-4 btn-lg">submit
+                                                        property</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-
-                                <!-- Breadcrumb start -->
-                                <ol class="breadcrumb pull-right">
-                                    <li class="breadcrumb-item">
-                                        <a href="#">
-                                            <i class="fa fa-home"></i>
-                                        </a>
-                                    </li>
-                                    <li class="breadcrumb-item active">My properties</li>
-                                </ol>
-                                <!-- Breadcrumb end -->
-
+                        </div>
+                        <div>
+                            <div class="feature-wrap">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="feature-image">
+                                            <a href="./assets/images/blog/1.jpg" class="zoom">
+                                                <div class="feature-overlay">
+                                                    <span>+</span>
+                                                </div>
+                                                <img src="./assets/images/blog/1.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <span class="label label-gradient label-lg color-4">
+                                                Featured property
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="feature-content">
+                                            <div class="details">
+                                                <h3><a href="#">Home to rent in Cape Town </a></h3>
+                                                <span>Emmy Avenue, Cape Town</span>
+                                                <p class="font-roboto">Residences can be classified by and how they are connected to neighbouring residences and land. </p>
+                                            </div>
+                                            <ul class="detail-list">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <span class="label label-light color-2 label-lg">
+                                                            <img src="./assets/images/icon/bed.png" class="img-fluid img-icon" alt="">
+                                                        </span>
+                                                        <h6>Bedroom</h6>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <span class="label label-light color-2 label-lg">
+                                                            <img src="./assets/images/icon/bathroom.png" class="img-fluid img-icon" alt="">
+                                                        </span>
+                                                        <h6>Bathroom</h6>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="label label-light color-2 label-lg">9532 Sq Ft</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="feature-price">
+                                                <li>
+                                                    <h3>R1900</h3>
+                                                    <h6>Home For Rent</h6>
+                                                </li>
+                                                <li><button type="button" onclick="document.location='#'" class="btn btn-gradient color-4 btn-lg">submit
+                                                        property</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Container-fluid end -->
+            </div>
+        </div>
+    </section>
 
-                <!-- Container-fluid start -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-header pb-0">
-                                    <h5>Add property details</h5>
+    <!-- listing property section start -->
+    <section class="property-section">
+        <div class="container">
+            <div class="row ratio_landscape">
+                <div class="col">
+                    <div class="title-3 text-start d-flex">
+                        <div>
+                            <h2>Listing Property</h2>
+                            <p class="font-roboto">Elegant retreat in Coral Gables setting. This home provides entertaining spaces with kitchen opening</p>
+                        </div>
+                        <ul class="nav nav-tabs pagination-tab" id="top-tab" role="tablist">
+                            <li class="nav-item"><a data-bs-toggle="tab" class="nav-link active" href="#prty-1">1</a></li>
+                            <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#prty-2">2</a></li>
+                            <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#prty-3">3</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="top-tabContent">
+                        <div class="tab-pane fade show active" id="prty-1">
+                            <div class="row list-property column-space no-slider-property">
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/12.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>How Much is My House Worth To Rent</h4>
+                                                    <p class="font-roboto">Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2500*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body admin-form">
-                                    <form class="row gx-3">
-                                        <div class="form-group col-sm-4">
-                                            <label>Property Type</label>
-                                            <input type="text" class="form-control" placeholder="apartment,shared rooms" required="">
-                                        </div>
-                                        <div class="form-group col-sm-4">
-                                            <label>Property Status</label>
-                                            <div class="dropdown">
-                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>For Rent</span> <i class="fas fa-angle-down"></i></span>
-                                                <div class="dropdown-menu text-start">
-                                                    <a class="dropdown-item" href="javascript:void(0)">For Rent</a>
-                                                    <!-- <a class="dropdown-item" href="javascript:void(0)">For Sale</a> -->
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/13.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Smith & Brothers Real Estate</h4>
+                                                    <p class="font-roboto">Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group col-sm-4">
-                                            <label>Property Rent Price</label>
-                                            <input type="text" class="form-control" placeholder="R2800" required="">
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2500*</span>
                                         </div>
-                                        <div class="form-group col-sm-4">
-                                            <label>Max Rooms</label>
-                                            <div class="dropdown">
-                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>1</span> <i class="fas fa-angle-down"></i></span>
-                                                <div class="dropdown-menu text-start">
-                                                    <a class="dropdown-item" href="javascript:void(0)">2</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">3</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">4</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">5</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">6</a>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/14.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Luxxe Choice Real Estate</h4>
+                                                    <p class="font-roboto">Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group col-sm-4">
-                                            <label>Beds</label>
-                                            <div class="dropdown">
-                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>1</span> <i class="fas fa-angle-down"></i></span>
-                                                <div class="dropdown-menu text-start">
-                                                    <a class="dropdown-item" href="javascript:void(0)">2</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">3</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">4</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">5</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">6</a>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2500*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/15.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Lucky Values Homes</h4>
+                                                    <p class="font-roboto">Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group col-sm-4">
-                                            <label>Baths</label>
-                                            <div class="dropdown">
-                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>1</span> <i class="fas fa-angle-down"></i></span>
-                                                <div class="dropdown-menu text-start">
-                                                    <a class="dropdown-item" href="javascript:void(0)">2</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">3</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">4</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">5</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">6</a>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2500*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/16.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Homerus Realty Agents</h4>
+                                                    <p class="font-roboto">Different types of housing can be used same physical type.</p>
+                                                    <a href="#">View Details</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group col-sm-4">
-                                            <label>Area</label>
-                                            <input type="text" class="form-control" placeholder="85 sq ft">
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2500*</span>
                                         </div>
-                                        <!-- <div class="form-group col-sm-4">
-                                            <label>Price</label>
-                                            <input type="text" class="form-control" placeholder="R3000">
-                                        </div> -->
-                                        <!-- <div class="form-group col-sm-4">
-                                            <label>Agencies</label>
-                                            <div class="dropdown">
-                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Premiere</span> <i class="fas fa-angle-down"></i></span>
-                                                <div class="dropdown-menu text-start">
-                                                    <a class="dropdown-item" href="javascript:void(0)">Blue Sky</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">Zephyr</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">Premiere</a>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/14.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Acolus Property Advisor</h4>
+                                                    <p class="font-roboto">Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
                                                 </div>
                                             </div>
-                                        </div> -->
-                                        <div class="form-group col-sm-12">
-                                            <label>Description</label>
-                                            <textarea class="form-control" rows="4"></textarea>
                                         </div>
-                                        <div class="form-group col-sm-6">
-                                            <label>Address</label>
-                                            <input type="text" class="form-control" placeholder="Address of your property">
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2500*</span>
                                         </div>
-                                        <div class="form-group col-sm-6">
-                                            <label>Zip code</label>
-                                            <input type="text" class="form-control" placeholder="39702">
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="form-group col-sm-4">
-                                            <label>Any Country</label>
-                                            <div class="dropdown">
-                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>South Africa</span> <i class="fas fa-angle-down"></i></span>
-                                                <div class="dropdown-menu text-start">
-                                                    <a class="dropdown-item" href="javascript:void(0)">South Africa</a>
-                                                    <!-- <a class="dropdown-item" href="javascript:void(0)">Brazil</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">New york</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">USA</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="prty-2">
+                            <div class="row list-property column-space no-slider-property">
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/12.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>New Land Realty</h4>
+                                                    <p class="font-roboto">Different types of housing can be used same physical type.</p>
+                                                    <a href="#">View Details</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group col-sm-4">
-                                            <label>Any City</label>
-                                            <div class="dropdown">
-                                                <span class="dropdown-toggle font-rubik" data-bs-toggle="dropdown"><span>Cape town</span> <i class="fas fa-angle-down"></i></span>
-                                                <div class="dropdown-menu text-start">
-                                                    <a class="dropdown-item" href="javascript:void(0)">Cape Town</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">Johannesburg</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">Durban</a>
-                                                    <a class="dropdown-item" href="javascript:void(0)">Polokwane</a>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R3400*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/13.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Retro Housing Investors</h4>
+                                                    <p class="font-roboto">Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="form-group col-sm-4">
-                                            <label>Landmark</label>
-                                            <input type="text" class="form-control" placeholder="landmark place name">
-                                        </div> -->
-                                    </form>
-                                    <div class="dropzone-admin">
-                                        <label>Media</label>
-                                        <form class="dropzone" id="multiFileUpload" action="/upload.php">
-                                            <div class="dz-message needsclick"><i class="fas fa-cloud-upload-alt"></i>
-                                                <h6>Drop files here or click to upload.</h6>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R3400*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/14.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Lock-in Property Agents</h4>
+                                                    <p class="font-roboto">Different types of housing can be used same physical type.</p>
+                                                    <a href="#">View Details</a>
+                                                </div>
                                             </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2100*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/15.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Urban District Real Estate</h4>
+                                                    <p class="font-roboto">Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2100*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/16.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>How Much is My House Worth</h4>
+                                                    <p class="font-roboto">>Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2100*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/14.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Mineral Grove Real Estate</h4>
+                                                    <p class="font-roboto">Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R2100*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>5000 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="prty-3">
+                            <div class="row list-property column-space no-slider-property">
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/12.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>How Much is My House Worth</h4>
+                                                    <p class="font-roboto">>Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R1250*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>860 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/13.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>How Much is My House Worth</h4>
+                                                    <p class="font-roboto">Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R1250*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>732 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>6 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6">
+                                    <div class="property-box">
+                                        <div class="property-image">
+                                            <a href="javascript:void(0)">
+                                                <img src="./assets/images/property/14.jpg" class="bg-img" alt="">
+                                            </a>
+                                            <div class="overlay-property">
+                                                <div class="overlay-box">
+                                                    <h4>Conveyance Property Agents</h4>
+                                                    <p class="font-roboto">>Apartment An individual unit in a multi-unit building.</p>
+                                                    <a href="#">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="label label-gradient label-lg color-4">R1250*</span>
+                                        </div>
+                                        <div class="property-details">
+                                            <ul class="icon-property">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#home-heart"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Virtual Home</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#ruler"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>1500 Sq Ft</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <ul class="icon-property mb-0">
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#key"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2 Rooms</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex">
+                                                        <div class="property-icon color-4">
+                                                            <svg class="property-svg">
+                                                                <use
+                                                                    xlink:href="./assets/svg/icons.svg#safety"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- listing property section end -->
+
+
+    <!-- subscribe section start -->
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="video-details">
+                        <span class="label label-light label-flat color-4">#Realestateforstudents</span>
+                        <h2>Stay Up to Date</h2>
+                        <p class="font-roboto">Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening Elegant retreat in a quiet Coral Gables setting.</p>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter Your Email Address" required>
+                            </div>
+                            <button type="submit" class="btn btn-gradient color-4 btn-lg">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe section end -->
+
+   
+                </div>
+            </div>
+        </div>
+ 
+    </footer>
+    <!-- footer end -->
+
+    <!--login & sign up modal start -->
+    <div class="modal fade signup-modal" id="login-modal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body ratio_asos">
+                    <div class="row m-0">
+                        <div class="col-lg-6 p-0">
+                            <div class="login-img">
+                                <img src="./assets/images/property/15.jpg" class="bg-img" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <div class="signup-tab theme-tab-4 log-in">
+                                <ul id="tabs" class="nav nav-tabs">
+                                    <li class="nav-item"><a href="" data-bs-target="#login" data-bs-toggle="tab" class="nav-link active">Students</a></li>
+                                    <li class="nav-item"><a href="" data-bs-target="#signup" data-bs-toggle="tab" class="nav-link">Landlords</a></li>
+                                </ul>
+                                <div id="tabsContent" class="tab-content">
+                                    <div id="login" class="tab-pane fade active show">
+                                        <h4>Log in as student</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-text">
+                                                        <i data-feather="user"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Enter Email" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <i data-feather="lock"></i> </div>
+                                                    </div>
+                                                    <input type="password" id="pwd-input" class="form-control" placeholder="Password" required>
+                                                    <div class="input-group-apend">
+                                                        <div class="input-group-text">
+                                                            <i id="pwd-icon" class="far fa-eye-slash"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <label class="d-block mb-0" for="chk-ani">
+                                                    <input class="checkbox_animated color-4" id="chk-ani"
+                                                        type="checkbox"> <span>Remember me</span>
+                                                </label>
+                                                <a href="#" class="font-rubik text-color-4">Forgot password ?</a>
+                                            </div>
+                                            <button type="submit" class="btn btn-gradient btn-flat color-4">Log
+                                                in</button>
+                                                <br>
+                                                <br>
+                                                <a href="registerstudents.html" class="font-rubik text-color-4">Or register if you don't have account</a>
                                         </form>
                                     </div>
-                                    <form class="row gx-3">
-                                        <div class="form-group col-sm-12">
-                                            <label>video (mp4)</label>
-                                            <input type="text" class="form-control" placeholder="mp4 video link">
-                                        </div>
-                                        <div class="form-group col-sm-12 mb-0">
-                                            <label>Additional features</label>
-                                            <div class="additional-checkbox">
-                                                <label for="chk-ani">
-                                                    <input class="checkbox_animated color-4" id="chk-ani" type="checkbox"> Emergency Exit
-                                                </label>
-                                                <label for="chk-ani1">
-                                                    <input class="checkbox_animated color-4" id="chk-ani1" type="checkbox"> CCTV
-                                                </label>
-                                                <label for="chk-ani2">
-                                                    <input class="checkbox_animated color-4" id="chk-ani2" type="checkbox" checked> Free Wi-Fi
-                                                </label>
-                                                <label for="chk-ani3">
-                                                    <input class="checkbox_animated color-4" id="chk-ani3" type="checkbox">  Free Parking In The Area
-                                                </label>
-                                                <label for="chk-ani4">
-                                                    <input class="checkbox_animated color-4" id="chk-ani4" type="checkbox">  Air Conditioning
-                                                </label>
-                                                <label for="chk-ani5">
-                                                    <input class="checkbox_animated color-4" id="chk-ani5" type="checkbox">  Security Guard
-                                                </label>
-                                                <label for="chk-ani6">
-                                                    <input class="checkbox_animated color-4" id="chk-ani6" type="checkbox" checked>  Terrace
-                                                </label>
-                                                <label for="chk-ani7">
-                                                    <input class="checkbox_animated color-4" id="chk-ani7" type="checkbox">  Laundry Service
-                                                </label>
-                                                <label for="chk-ani8">
-                                                    <input class="checkbox_animated color-4" id="chk-ani8" type="checkbox">  Elevator Lift
-                                                </label>
-                                                <label for="chk-ani9">
-                                                    <input class="checkbox_animated color-4" id="chk-ani9" type="checkbox" checked>  Balcony
-                                                </label>
+                                    <div id="signup" class="tab-pane fade">
+                                        <h4>Log in as landlord</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-text">
+                                                        <i data-feather="user"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Enter Email">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-btn col-sm-12">
-                                            <button type="button" class="btn btn-pill btn-gradient color-4">Submit</button>
-                                            <button type="button" class="btn btn-pill btn-dashed color-4">Cancel</button>
-                                        </div>
-                                    </form>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <i data-feather="lock"></i> </div>
+                                                    </div>
+                                                    <input type="password" id="pwd-input" class="form-control" placeholder="Password">
+                                                    <div class="input-group-apend">
+                                                        <div class="input-group-text">
+                                                            <i id="pwd-icon" class="far fa-eye-slash"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <label class="d-block mb-0" for="chk-ani">
+                                                    <input class="checkbox_animated color-4" id="chk-ani"
+                                                        type="checkbox"> <span>Remember me</span>
+                                                </label>
+                                                <a href="#" class="font-rubik text-color-4">Forgot password ?</a>
+                                            </div>
+                                            <a href="adminlandlord.html">
+                                                 <button type="button" class="btn btn-gradient btn-flat color-4">Log
+                                                in</button>
+                                            </a>
+                                           
+                                                <br>
+                                                <br>
+                                                <a href="#" class="font-rubik text-color-4">Or register if you don't have account</a>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Container-fluid end -->
-
             </div>
-
-            <!-- footer start -->
-            <!-- <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 footer-copyright">
-                            <p class="mb-0">Copyright 2022 © Sheltos All rights reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="float-end mb-0">Developed with <i class="fa fa-heart font-danger"></i></p>
-                        </div>
-                    </div>
-                </div> -->
-            </footer>
-            <!-- footer end -->
         </div>
     </div>
+    <!--login & sign up modal end -->
+
+    <!-- video modal start -->
+    <div class="modal fade video-modal" id="video">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+                    <iframe title="realestate" src="https://www.youtube.com/embed/Sz_1tkcU0Co" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video modal end -->
 
     <!-- tap to top start -->
-    <div class="tap-top">
+    <div class="tap-top color-4">
         <div>
             <i class="fas fa-arrow-up"></i>
         </div>
@@ -829,27 +1607,52 @@
     <!-- latest jquery-->
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
 
+    <!-- popper js-->
+    <script src="./assets/js/popper.min.js"></script>
+
+    <!-- magnific js -->
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/zoom-gallery.js"></script>
+
     <!-- Bootstrap js-->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- map js -->
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <script src="./assets/js/map/here-map-info.js"></script>
 
     <!-- feather icon js-->
     <script src="./assets/js/feather-icon/feather.min.js"></script>
     <script src="./assets/js/feather-icon/feather-icon.js"></script>
 
-    <!-- Dropzone js -->
-    <script src="./assets/js/dropzone/dropzone.js"></script>
-    <script src="./assets/js/dropzone/dropzone-script.js"></script>
+    <!-- wow js-->
+    <script src="./assets/js/wow.min.js"></script>
 
-    <!-- Color-picker js-->
-    <script src="./assets/js/color/custom-colorpicker.js"></script>
+    <!-- slick js -->
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/slick-animation.min.js"></script>
+    <script src="./assets/js/custom-slick.js"></script>
 
-    <!-- sidebar js -->
-    <script src="./assets/js/sidebar.js"></script>
+    <!-- login js -->
+    <script src="./assets/js/login.js"></script>
 
-    <!--admin js -->
-    <script src="./assets/js/admin-script.js"></script>
+    <!-- Template js-->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- range slider js -->
+    <script src="./assets/js/jquery-ui.js"></script>
+    <script src="./assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="./assets/js/range-slider.js"></script>
 
     <!-- Customizer js-->
     <script src="./assets/js/customizer.js"></script>
 
-</bod#>
+    <!-- Color-picker js-->
+    <script src="./assets/js/color/layout4.js"></script>
+
+</body>
+
+</html>
